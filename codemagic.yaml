@@ -40,7 +40,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - acehov512@gmail.com
+          - sloanebennettzebediahhill@gmail.com
         notify:
           success: true
           failure: false
