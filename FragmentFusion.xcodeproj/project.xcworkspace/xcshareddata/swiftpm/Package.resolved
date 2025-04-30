@@ -1,5 +1,5 @@
 {
-  "originHash" : "76ddb97a015a5fe9832feeb0722ecb52da8f34a6d14a63f3abb855009a814073",
+  "originHash" : "c40a59d9d33a9856d48eed91bf11f053e7d11537ac187e053cc49d26104f9941",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -17,6 +17,15 @@
       "state" : {
         "revision" : "61b85103a1aeed8218f17c794687781505fbbef5",
         "version" : "11.2.0"
+      }
+    },
+    {
+      "identity" : "appsflyerframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AppsFlyerSDK/AppsFlyerFramework.git",
+      "state" : {
+        "revision" : "88269d96aed888416e5fabbe983f769aa9013d5c",
+        "version" : "6.17.0"
       }
     },
     {
@@ -107,6 +116,15 @@
       "state" : {
         "revision" : "540318ecedd63d883069ae7f1ed811a2df00b6ac",
         "version" : "2.4.0"
+      }
+    },
+    {
+      "identity" : "pushexpress-swift-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pushexpress/pushexpress-swift-sdk",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5c5bb30553adb1f4aedbdeb840497bcceb0445da"
       }
     },
     {

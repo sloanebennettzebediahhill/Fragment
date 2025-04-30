@@ -17,7 +17,23 @@
 		D57E08422DB92B6E00B365BC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D57E08412DB92B6E00B365BC /* FirebaseFirestore */; };
 		D57E08442DB92B6E00B365BC /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = D57E08432DB92B6E00B365BC /* FirebaseFunctions */; };
 		D57E08462DB92B6E00B365BC /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = D57E08452DB92B6E00B365BC /* FirebaseRemoteConfig */; };
+		D5D801012DC12B170050D610 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = D5D801002DC12B170050D610 /* AppsFlyerLib */; };
+		D5D801042DC12B330050D610 /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = D5D801032DC12B330050D610 /* SdkPushExpress */; };
+		D5D801102DC12B470050D610 /* notificationsvc.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D5D801092DC12B470050D610 /* notificationsvc.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D5D801182DC12B620050D610 /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = D5D801172DC12B620050D610 /* SdkPushExpress */; };
+		D5D8011B2DC12B9B0050D610 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D8011A2DC12B9B0050D610 /* AdSupport.framework */; };
+		D5D8011D2DC12BDB0050D610 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D5D8011C2DC12BDB0050D610 /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5D8010E2DC12B470050D610 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5B579142DB24D06004B4A76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5D801082DC12B470050D610;
+			remoteInfo = notificationsvc;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D57E08352DB9238E00B365BC /* Embed Frameworks */ = {
@@ -31,10 +47,24 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5D801152DC12B470050D610 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D5D801102DC12B470050D610 /* notificationsvc.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D5B5791C2DB24D06004B4A76 /* FragmentFusion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FragmentFusion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5D801092DC12B470050D610 /* notificationsvc.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notificationsvc.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5D8011A2DC12B9B0050D610 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D5D8011C2DC12BDB0050D610 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -44,6 +74,13 @@
 				Resources/Info.plist,
 			);
 			target = D5B5791B2DB24D06004B4A76 /* FragmentFusion */;
+		};
+		D5D801142DC12B470050D610 /* Exceptions for "notificationsvc" folder in "notificationsvc" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D5D801082DC12B470050D610 /* notificationsvc */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -56,6 +93,14 @@
 			path = FragmentFusion;
 			sourceTree = "<group>";
 		};
+		D5D8010A2DC12B470050D610 /* notificationsvc */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D5D801142DC12B470050D610 /* Exceptions for "notificationsvc" folder in "notificationsvc" target */,
+			);
+			path = notificationsvc;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +109,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D57E08462DB92B6E00B365BC /* FirebaseRemoteConfig in Frameworks */,
+				D5D801042DC12B330050D610 /* SdkPushExpress in Frameworks */,
+				D5D801012DC12B170050D610 /* AppsFlyerLib in Frameworks */,
 				D57E08382DB92B6E00B365BC /* FirebaseAnalytics in Frameworks */,
 				D57E083E2DB92B6E00B365BC /* FirebaseAuth in Frameworks */,
+				D5D8011B2DC12B9B0050D610 /* AdSupport.framework in Frameworks */,
 				D57E083A2DB92B6E00B365BC /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				D57E08442DB92B6E00B365BC /* FirebaseFunctions in Frameworks */,
 				D57E08332DB9238200B365BC /* RealmSwift in Frameworks */,
@@ -75,13 +123,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5D801062DC12B470050D610 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5D801182DC12B620050D610 /* SdkPushExpress in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		D5B579132DB24D06004B4A76 = {
 			isa = PBXGroup;
 			children = (
+				D5D8011C2DC12BDB0050D610 /* PrivacyInfo.xcprivacy */,
 				D5B5791E2DB24D06004B4A76 /* FragmentFusion */,
+				D5D8010A2DC12B470050D610 /* notificationsvc */,
+				D5D801162DC12B620050D610 /* Frameworks */,
 				D5B5791D2DB24D06004B4A76 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,8 +149,17 @@
 			isa = PBXGroup;
 			children = (
 				D5B5791C2DB24D06004B4A76 /* FragmentFusion.app */,
+				D5D801092DC12B470050D610 /* notificationsvc.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D5D801162DC12B620050D610 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5D8011A2DC12B9B0050D610 /* AdSupport.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,10 +173,12 @@
 				D5B579192DB24D06004B4A76 /* Frameworks */,
 				D5B5791A2DB24D06004B4A76 /* Resources */,
 				D57E08352DB9238E00B365BC /* Embed Frameworks */,
+				D5D801152DC12B470050D610 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D5D8010F2DC12B470050D610 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				D5B5791E2DB24D06004B4A76 /* FragmentFusion */,
@@ -124,10 +194,35 @@
 				D57E08412DB92B6E00B365BC /* FirebaseFirestore */,
 				D57E08432DB92B6E00B365BC /* FirebaseFunctions */,
 				D57E08452DB92B6E00B365BC /* FirebaseRemoteConfig */,
+				D5D801002DC12B170050D610 /* AppsFlyerLib */,
+				D5D801032DC12B330050D610 /* SdkPushExpress */,
 			);
 			productName = PuzzlesPackMan;
 			productReference = D5B5791C2DB24D06004B4A76 /* FragmentFusion.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D5D801082DC12B470050D610 /* notificationsvc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5D801112DC12B470050D610 /* Build configuration list for PBXNativeTarget "notificationsvc" */;
+			buildPhases = (
+				D5D801052DC12B470050D610 /* Sources */,
+				D5D801062DC12B470050D610 /* Frameworks */,
+				D5D801072DC12B470050D610 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D5D8010A2DC12B470050D610 /* notificationsvc */,
+			);
+			name = notificationsvc;
+			packageProductDependencies = (
+				D5D801172DC12B620050D610 /* SdkPushExpress */,
+			);
+			productName = notificationsvc;
+			productReference = D5D801092DC12B470050D610 /* notificationsvc.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -140,6 +235,9 @@
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					D5B5791B2DB24D06004B4A76 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					D5D801082DC12B470050D610 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
@@ -156,6 +254,8 @@
 			packageReferences = (
 				D57E08312DB9238200B365BC /* XCRemoteSwiftPackageReference "realm-swift" */,
 				D57E08362DB92B6E00B365BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D5D800FF2DC12B170050D610 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+				D5D801022DC12B330050D610 /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D5B5791D2DB24D06004B4A76 /* Products */;
@@ -163,12 +263,21 @@
 			projectRoot = "";
 			targets = (
 				D5B5791B2DB24D06004B4A76 /* FragmentFusion */,
+				D5D801082DC12B470050D610 /* notificationsvc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D5B5791A2DB24D06004B4A76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5D8011D2DC12BDB0050D610 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5D801072DC12B470050D610 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -185,7 +294,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5D801052DC12B470050D610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5D8010F2DC12B470050D610 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5D801082DC12B470050D610 /* notificationsvc */;
+			targetProxy = D5D8010E2DC12B470050D610 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D5B579302DB24D08004B4A76 /* Debug */ = {
@@ -193,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FragmentFusion/FragmentFusion.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -200,6 +325,7 @@
 				INFOPLIST_FILE = FragmentFusion/Resources/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to your photo library to select puzzle images";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photo library to select puzzle images";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to show you personalized ads on the marketplaces.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -211,7 +337,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sloanehill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -230,6 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FragmentFusion/FragmentFusion.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -237,6 +365,7 @@
 				INFOPLIST_FILE = FragmentFusion/Resources/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to your photo library to select puzzle images";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photo library to select puzzle images";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to show you personalized ads on the marketplaces.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -248,7 +377,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sloanehill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -381,6 +511,68 @@
 			};
 			name = Release;
 		};
+		D5D801122DC12B470050D610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notificationsvc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notificationsvc;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sloanehill.notificationsvc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D5D801132DC12B470050D610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notificationsvc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notificationsvc;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sloanehill.notificationsvc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -402,6 +594,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D5D801112DC12B470050D610 /* Build configuration list for PBXNativeTarget "notificationsvc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5D801122DC12B470050D610 /* Debug */,
+				D5D801132DC12B470050D610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -419,6 +620,22 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 11.12.0;
+			};
+		};
+		D5D800FF2DC12B170050D610 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.0;
+			};
+		};
+		D5D801022DC12B330050D610 /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pushexpress/pushexpress-swift-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -468,6 +685,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D57E08362DB92B6E00B365BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseRemoteConfig;
+		};
+		D5D801002DC12B170050D610 /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5D800FF2DC12B170050D610 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+		D5D801032DC12B330050D610 /* SdkPushExpress */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5D801022DC12B330050D610 /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
+			productName = SdkPushExpress;
+		};
+		D5D801172DC12B620050D610 /* SdkPushExpress */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5D801022DC12B330050D610 /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
+			productName = SdkPushExpress;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -5,9 +5,9 @@ import WebKit
 struct OnboardingScreen: View {
     @State var isLoad: Bool = false
     var body: some View {
-        if isLoad {
-            RootScreen(viewModel: .init())
-        } else {
+//        if isLoad {
+//            RootScreen(viewModel: .init())
+//        } else {
             VStack {
                 Spacer()
                 Spacer()
@@ -50,7 +50,7 @@ struct OnboardingScreen: View {
                     isLoad = true
                 }
             }
-        }
+//        }
     }
 }
 
