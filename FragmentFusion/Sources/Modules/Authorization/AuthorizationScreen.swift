@@ -28,7 +28,7 @@ struct AuthorizationScreen: View {
                 .alert(isPresented: $isAlertShown) {
                     Alert(
                         title: Text("Error"),
-                        message: Text("viewModel.text"),
+                        message: Text(viewModel.text),
                         dismissButton: .cancel()
                     )
                 }
